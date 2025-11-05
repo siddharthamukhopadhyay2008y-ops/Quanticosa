@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Research Note — Rishi's Quanticosa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --muted: #cbd5e1;
+      --accent: #818cf8;
+      --shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+    *{box-sizing:border-box}
+    body {margin:0; font-family:Inter, system-ui; background:var(--bg); color:#f1f5f9;}
+    a{color:var(--accent); text-decoration:none}
+    .container{max-width:900px;margin:auto;padding:20px}
+    header{text-align:center;padding:20px 0}
+    h1,h2,h3{color:#f8fafc;margin:0}
+    .muted{color:var(--muted)}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow);margin-bottom:20px}
+    footer{text-align:center;color:var(--muted);padding:20px;margin-top:40px}
+    input,textarea{background:#334155;color:white;border:1px solid #475569;border-radius:8px;padding:10px;width:100%;}
+    .back{display:inline-block;margin-bottom:20px;color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <header>
+      <h1 id="note-title">Untitled Research Note</h1>
+      <p class="muted">Date: <span id="note-date">November 2025</span></p>
+      <p class="muted">Tags: <span id="note-tags">Quantum Physics, Simulation</span></p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Summary</h2>
+        <p id="note-summary">This is a brief description of your research or project. Summarize the goals, hypotheses, or results you’re exploring.</p>
+      </section>
+
+      <section class="card">
+        <h2>Main Content</h2>
+        <p id="note-content">Write your research explanation, derivations, or insights here. You can use LaTeX-style equations with MathJax like <code>$$E=mc^2$$</code> or <code>$$\Psi(x,t) = A e^{i(kx - \omega t)}$$</code>.</p>
+      </section>
+
+      <section class="card">
+        <h2>Graphs / Images</h2>
+        <p class="muted">Insert diagrams or result plots below:</p>
+        <div style="background:#334155;border-radius:8px;padding:20px;text-align:center;color:#94a3b8">[ Image or Graph Placeholder ]</div>
+      </section>
+
+      <section id="comments" class="card">
+        <h2>Comments</h2>
+        <div class="muted">Let's bring a positive change to this world, together!</div>
+        <form style="margin-top:10px">
+          <textarea placeholder="Write a comment... (demo only)"></textarea>
+          <button type="button" style="margin-top:8px;padding:8px 12px;border:0;border-radius:8px;background:var(--accent);color:white;cursor:pointer">Post Comment</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Rishi's Quanticosa — Built with curiosity and passion.
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

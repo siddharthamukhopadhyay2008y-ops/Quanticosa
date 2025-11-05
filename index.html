@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rishi's Quanticosa</title>
+  <meta name="description" content="Rishi's Quanticosa — research notes, projects, and research life." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --muted: #cbd5e1;
+      --accent: #818cf8;
+      --accent-2: #a78bfa;
+      --shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+    *{box-sizing:border-box}
+    body {margin:0; font-family:Inter, system-ui; background:var(--bg); color:#f1f5f9;}
+    a{color:var(--accent); text-decoration:none}
+    .container{max-width:900px;margin:auto;padding:20px}
+    header{text-align:center;padding:20px 0}
+    h1,h2,h3{color:#f8fafc;margin:0}
+    .muted{color:var(--muted)}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow);margin-bottom:20px}
+    footer{text-align:center;color:var(--muted);padding:20px;margin-top:40px}
+    input,textarea{background:#334155;color:white;border:1px solid #475569;border-radius:8px;padding:10px;width:100%;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Rishi's Quanticosa</h1>
+      <p class="muted">Research • Notes • Research Life</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Welcome to My Research Notebook</h2>
+        <p>This site collects short research notes, experiments, and reflections from my journey through physics, quantum mechanics, and data science. Explore ideas, read insights, or dive into projects below.</p>
+      </section>
+
+      <section id="notes" class="card">
+        <h2>Latest Notes</h2>
+        <ul>
+          <li><a href="note-template.html">Quantum Tunnelling Simulator — Exploratory Draft</a></li>
+          <li><a href="note-template.html">Spectral Denoising using Wavelets — Lab Journal</a></li>
+          <li><a href="note-template.html">Aero Stability — Rapid Calculation Notes</a></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <p>Highlights from ongoing or completed research:</p>
+        <ul>
+          <li>Quantum Simulation Interfaces</li>
+          <li>Machine Learning in Spectral Data</li>
+          <li>Aerodynamic Modelling Tools</li>
+        </ul>
+      </section>
+
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p class="muted">I’m Rishi — a student and researcher exploring the frontiers of physics, quantum science, aeronautical engineering, and data science. This site is a chronicle of ideas in progress, data explorations, and reflections on discovery.</p>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Comments</h2>
+        <div class="muted">Let's bring a positive change to this world, together!</div>
+        <form style="margin-top:10px">
+          <textarea placeholder="Write a comment... (demo only)"></textarea>
+          <button type="button" style="margin-top:8px;padding:8px 12px;border:0;border-radius:8px;background:var(--accent);color:white;cursor:pointer">Post Comment</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Rishi's Quanticosa — Built with curiosity and passion.
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
